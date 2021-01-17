@@ -461,7 +461,7 @@ ul.list-checked li i {
     margin-right: auto;
 }
 .header-area.sticky .navbar{
-    background-image: linear-gradient(to right, rgb(26 42 189 / 90%) 0%, rgb(36 83 255 / 90%) 51%, rgb(26 42 189 / 0.9) 100%);
+    background-image: linear-gradient(to right, rgba(0,101,255, .9) 0%, rgba(0,127,255,.9) 51%,  rgba(0,101,255, .9) 100%);
     background-size: 200% auto;
 }
 .site-logo a{
@@ -1933,7 +1933,7 @@ header.card-header {
 #15. Footer
 ============================================================================= */
 footer{
-    background: linear-gradient(to right, rgb(26 42 189 / 90%) 0%, rgb(36 83 255 / 90%) 51%, rgb(26 42 189 / 0.9) 100%);
+    background: linear-gradient(to right, rgba(0,101,255, .9) 0%, rgba(0,127,255,.9) 51%,  rgba(0,101,255, .9) 100%);
     background-size:  200% auto;
     position: relative;
     padding-top: 220px;
@@ -2391,7 +2391,7 @@ footer p{
     right: 0;
     top: -7px;
     background: #3264f5;
-    background: linear-gradient(to right, rgb(26 42 189 / 90%) 0%, rgb(36 83 255 / 90%) 51%, rgb(26 42 189 / 0.9) 100%);
+    background: linear-gradient(to right, rgba(0,101,255, .9) 0%, rgba(0,127,255,.9) 51%,  rgba(0,101,255, .9) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
