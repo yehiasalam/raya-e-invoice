@@ -2845,12 +2845,8 @@ footer p{
         border-radius: 5px;
     }
     .home-demo3 .navbar-toggler-icon{
-        background: #901ec1;
-        background: -moz-linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-        background: -webkit-linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-        background: linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-        background: linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7450fe', endColorstr='#901ec1',GradientType=1 );
+        background: rgb(0,31,255);
+        background: linear-gradient(to right, rgb(0,31,255) 2%, rgb(0,101,255) 82%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         border: 1px solid #901ec1;
