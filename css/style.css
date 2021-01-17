@@ -154,12 +154,11 @@ ol {
 .section-header h2 {
     font-size: 34px;
     line-height: 48px;
-    color: #263b5e;
+    color: #333;
     margin-bottom: 15px;
     text-transform: capitalize;
 }
 .section-header p {
-    font-size: 15px;
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -401,7 +400,7 @@ ul.list-checked li i {
 #back-to-top .top {
     position: fixed;
     color: #ffffff;
-    background-image: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+    background: linear-gradient(to right, rgb(26 42 189 / 90%) 0%, rgb(36 83 255 / 90%) 51%, rgb(26 42 189 / 0.9) 100%);
     background-size: 200% auto;
     bottom: 45px;
     right: 45px;
@@ -1054,7 +1053,7 @@ ul.list-checked li i {
     background: #5cbd2c;
 }
 .feature-block h3{
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
     margin-bottom: 8px;  
 }
@@ -1945,7 +1944,7 @@ header.card-header {
 #15. Footer
 ============================================================================= */
 footer{
-    background: linear-gradient(to left, rgba(144, 30, 193, 1) 0%, rgb(107, 73, 238) 51%, rgba(144, 30, 193, 1) 100%);
+    background: linear-gradient(to right, rgb(26 42 189 / 90%) 0%, rgb(36 83 255 / 90%) 51%, rgb(26 42 189 / 0.9) 100%);
     background-size:  200% auto;
     position: relative;
     padding-top: 220px;
@@ -2033,6 +2032,7 @@ footer p{
     margin: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.18);
     margin-top: 30px;
+	font-size: 14px;
 }
 .copyrights p a{
     color: #fff;
@@ -2082,17 +2082,23 @@ footer p{
 ============================================================================= */
 #contact{
     position: relative;
+	background-color: #fafafa;
 }
 #contact .section-header-style2 {
     margin-bottom: 40px;
 }
 #contact .section-header-style2 h2 {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: bold;
 }
 #contact .section-header-style2 p{
-    font-size: 14px;
+    /*font-size: 14px;*/
 }
+
+.contact-details p{
+	font-size: 16px;
+}
+
 .bubbles-animate .bubble {
     position: absolute;
     border-radius: 50%;
@@ -2359,6 +2365,9 @@ footer p{
     margin: 0 60px;
     border-radius: 30px;
 }
+
+
+
 .contact-shape img{
     position: absolute;
 }
@@ -2393,7 +2402,7 @@ footer p{
     right: 0;
     top: -7px;
     background: #3264f5;
-    background: linear-gradient(to right, #901ec1 0%, #7450fe 51%, #901ec1 100%);
+    background: linear-gradient(to right, rgb(26 42 189 / 90%) 0%, rgb(36 83 255 / 90%) 51%, rgb(26 42 189 / 0.9) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2494,16 +2503,12 @@ footer p{
     position: absolute;
     top: 50%;
     left: 5px;
-    margin-top: 10px;
+    margin-top: -10px;
 }
 .faq-icon i:before{
     font-size: 60px;
     background: #901ec1;
-    background: -moz-linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-    background: -webkit-linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-    background: linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-    background: linear-gradient(to right, #901ec1 2%, #7450fe 82%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7450fe', endColorstr='#901ec1',GradientType=1 );
+    background: linear-gradient(to right, rgb(26 42 189 / 90%) 0%, rgb(36 83 255 / 90%) 51%, rgb(26 42 189 / 0.9) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 0; 
