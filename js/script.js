@@ -365,5 +365,70 @@
     $('#preloader').fadeOut('slow', function () {
         $(this).remove();
     });
+	
+	 /*======================================
+     Form Submission
+     ======================================*/
+	$('#form1-btn').on( "click", function() {
+		
+		if ( (document.form1.elements['Name'].value) &&
+		   	 (document.form1.elements['Email'].value) &&
+			 (document.form1.elements['Phone'].value)
+		   ) {
+			
+			if (is_source_google()){
+				gtag('event', 'conversion', {
+					'send_to': 'AW-4f54683427/huy9CJnct-4BEKPW59gB',
+					'event_label' : document.form1.elements['Email'].value,
+					'event_callback': submit_form1
+				});
+			} else {
+				document.form1.submit();
+			}
+			
+		} else {
+			alert("Please fill in all the required fields");
+		}
+	});
 
+	$('#form2-btn').on( "click", function() {
+		
+		if ( (document.form2.elements['Name'].value) &&
+		   	 (document.form2.elements['Email'].value) &&
+			 (document.form2.elements['Phone'].value)
+		   ) {
+
+			if (is_source_google()){
+				gtag('event', 'conversion', {
+					'send_to': 'AW-4f54683427/huy9CJnct-4BEKPW59gB',
+					'event_label' : document.form2.elements['Email'].value,
+					'event_callback': submit_form2
+				});
+			} else {
+				document.form2.submit();
+			}
+			
+			
+		} else {
+			alert("Please fill in all the required fields");
+		}
+	});
+	
 })(jQuery);
+
+function submit_form1(){
+	document.form1.submit();
+}
+
+function submit_form2(){
+	document.form2.submit();
+}
+
+function is_source_google(){
+	
+	var url = window.location.href;
+	if(url.indexOf('?source=google') != -1) return true;
+	
+	return false
+	
+}

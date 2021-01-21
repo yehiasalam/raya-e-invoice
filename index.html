@@ -63,13 +63,13 @@
                             <h1>ابدأ بتطبيق الفاتورة<br> الإلكترونية الآن مع برنامج راية !</h1>
                             <p>تكامل مع منظومة الضرائب المميكنة في خلال 10 أيام </p>
 							<div class="home-banner-subscribe">
-								<form>
+								<form name="form1" action="https://submit-form.com/beF4Y5T1">
 									<div class="newsletter-form">
-										<input type="text" placeholder="الأسم" />
-										<input type="text" placeholder="البريد الإلكتروني" />
-										<input type="text" placeholder="رقم التليفون" />
+										<input type="text" name="Name" placeholder="الأسم" required />
+										<input type="email" name="Email" placeholder="البريد الإلكتروني" required />
+										<input type="text" name="Phone" placeholder="رقم التليفون" required />
 										
-										<button class="btn theme-btn" type="submit">أرغب في الاستعلام</button>
+										<button id="form1-btn" class="btn theme-btn" type="button">أرغب في الاستعلام</button>
 																				
 									</div>
 								</form>
@@ -621,13 +621,13 @@
                                   ادخل بياناتك و سنقوم بالتوصل معك
                                 </p>
                             </div>
-                            <form class="contact-form">
+                            <form class="contact-form" name="form2" action="https://submit-form.com/beF4Y5T1">
 								
-                                <input type="text" class="form-control" placeholder="الأسم" />
-                                <input type="email" class="form-control" placeholder="البريد الالكتروني" />
-                                <input type="tel" class="form-control"placeholder="رقم التليفون" />
+                                <input type="text" class="form-control" name="Name" placeholder="الأسم" />
+                                <input type="email" class="form-control" name="Email" placeholder="البريد الالكتروني" />
+                                <input type="tel" class="form-control" name="Phone" placeholder="رقم التليفون" />
                                
-                                <button class="btn theme-btn">تسجيل</button>
+                                <button id="form2-btn" class="btn theme-btn" type="button">تسجيل</button>
                             </form>
                         </div>
 
@@ -652,7 +652,9 @@
                             </div>
                             <div class="footer-social-links">
                                 <a href="https://www.linkedin.com/company/raya-international-services/" target="_blank" ><i class="ti-linkedin"></i></a>
-                            </div>
+                            	<a href="https://www.facebook.com/RayaInternationalServices" target="_blank" ><i class="ti-facebook"></i></a>
+
+							</div>
                         </div>
                         <!-- End Column 1 -->
 
