@@ -3047,3 +3047,7 @@ footer p{
 #AppFeatures{
 	padding-bottom: 0px;
 }
+
+.phone-number{
+	direction: ltr;
+}
