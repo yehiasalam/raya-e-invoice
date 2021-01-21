@@ -378,7 +378,7 @@
 			
 			if (is_source_google()){
 				gtag('event', 'conversion', {
-					'send_to': 'AW-4f54683427/huy9CJnct-4BEKPW59gB',
+					'send_to': 'AW-439755269/A3f8CPjAg_IBEIXE2NEB',
 					'event_label' : document.form1.elements['Email'].value,
 					'event_callback': submit_form1
 				});
@@ -400,7 +400,7 @@
 
 			if (is_source_google()){
 				gtag('event', 'conversion', {
-					'send_to': 'AW-4f54683427/huy9CJnct-4BEKPW59gB',
+					'send_to': 'AW-439755269/A3f8CPjAg_IBEIXE2NEB',
 					'event_label' : document.form2.elements['Email'].value,
 					'event_callback': submit_form2
 				});
