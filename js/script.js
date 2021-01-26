@@ -381,7 +381,12 @@
 					'send_to': 'AW-439755269/A3f8CPjAg_IBEIXE2NEB',
 					'event_label' : document.form1.elements['Email'].value,
 					'event_callback': submit_form1
-				});
+                });
+            } else if( is_source_linkedin() ){
+                trigger_linkedin_conversion(document.form1);
+                setTimeout(() => {
+                    document.form1.submit();    
+                }, 1000);
 			} else {
 				document.form1.submit();
 			}
@@ -404,6 +409,11 @@
 					'event_label' : document.form2.elements['Email'].value,
 					'event_callback': submit_form2
 				});
+            } else if( is_source_linkedin() ){
+                trigger_linkedin_conversion(document.form2);
+                setTimeout(() => {
+                    document.form2.submit();    
+                }, 1000);
 			} else {
 				document.form2.submit();
 			}
@@ -431,4 +441,25 @@ function is_source_google(){
 	
 	return false
 	
+}
+
+function is_source_linkedin(){
+	
+	var url = window.location.href;
+	if(url.indexOf('?source=linkedin') != -1) return true;
+	
+	return false
+	
+}
+
+function trigger_linkedin_conversion(current_form){
+ 
+    var imgtag = document.createElement('img');
+    imgtag.height = '1';
+    imgtag.width = '1';
+    imgtag.style = 'border-style:none;';
+    imgtag.alt = '';
+    imgtag.src = 'https://px.ads.linkedin.com/collect/?pid=3160633&conversionId=3974889&fmt=gif';
+    
+    current_form.appendChild(imgtag);
 }
